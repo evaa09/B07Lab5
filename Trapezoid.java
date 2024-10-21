@@ -15,7 +15,7 @@ public class Trapezoid{
 		return A.distance(B) + B.distance(C) + C.distance(D) + D.distance(A);
 	}
 	
-	public double isIsosceles() {
+	public boolean isIsosceles() {
 		double dAB = A.distance(B);
 		double dCD = C.distance(D);
 		double dBC = B.distance(C);
