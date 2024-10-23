@@ -1,5 +1,3 @@
-package lab5;
-
 public class Circle extends Point {
 	// Fields
 	double radius;
