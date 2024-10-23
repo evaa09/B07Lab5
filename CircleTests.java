@@ -59,35 +59,35 @@ class CircleTests {
 	void testEquals2() {
 		Circle c1 = new Circle(2,0,0);
 		Circle c2 = null;
-		assertTrue(!(c1.equals(c2)));
+		assertFalse(c1.equals(c2));
 	}
 	
 	@Test
 	void testEquals3() {
 		Circle c1 = new Circle(2,0,0);
 		int x = 5;
-		assertTrue(!(c1.equals(x)));
+		assertFalse(c1.equals(x));
 	}
 	
 	@Test
 	void testEquals4() {
 		Circle c1 = new Circle(2,0,0);
 		Circle c2 = new Circle(4,1,0);
-		assertTrue(!(c1.equals(c2)));
+		assertFalse(c1.equals(c2));
 	}
 	
 	@Test
 	void testEquals5() {
 		Circle c1 = new Circle(2,0,0);
 		Circle c2 = new Circle(4,0,1);
-		assertTrue(!(c1.equals(c2)));
+		assertFalse(c1.equals(c2));
 	}
 	
 	@Test
 	void testEquals6() {
 		Circle c1 = new Circle(2,0,0);
 		Circle c2 = new Circle(4,0,0);
-		assertTrue(!(c1.equals(c2)));
+		assertFalse(c1.equals(c2));
 	}
 	
 	@Test
